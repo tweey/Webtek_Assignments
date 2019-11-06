@@ -1,0 +1,7 @@
+1. The absolute position is placed in a absolute position which means that it will stay on exactly one position on the website
+after it's left/right/top/bottom paramters. The top/left/right/bottom parameters are relative to the parent div. It will stay on the same
+spot when the page is scrolled
+The fixed position is placed in a position chosen by the "viewport" and not dependent on the parent element. It will also 
+stay on the same place when scrolled.
+2. You use the :n-th-child(3) psuedo selector to access the third element. you could also give the third element
+an id or a class to style it. 

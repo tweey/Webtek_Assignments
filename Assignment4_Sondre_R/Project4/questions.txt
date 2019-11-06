@@ -1,0 +1,6 @@
+1. After the ios 10 update. Videos are able to autoplay if; they don't have a audio track or if the video is muted. On Andriod, Chrome supports autoplay also if muted is set. Sources: 
+https://webkit.org/blog/6784/new-video-policies-for-ios/
+https://developers.google.com/web/updates/2016/07/autoplay
+2. In the question the unit of the resolution was not specified, so im gonna assume it's pixels. It will display the elements of the id="logo" since the resolution is not between 768 and 1024 pixels.
+3. In HTML5 and CSS3 there is alot of tools to help you make a responsive Website. Today there is also alot of different mobile sizes on the market, therefore its's easier to make one responsive website. It also uses less space on the server since it only has to host 1 site instead of 2.
+ 

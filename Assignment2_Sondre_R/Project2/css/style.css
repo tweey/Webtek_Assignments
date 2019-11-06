@@ -1,0 +1,13 @@
+header {
+  font-family: 'Courier';
+}
+body{
+  background-color: #E8F0FF;
+}
+p {
+    font-family: 'Arial','sans-serif';
+}
+#duck{
+  max-width: 150px;
+  border: solid #F7ACCF;
+}

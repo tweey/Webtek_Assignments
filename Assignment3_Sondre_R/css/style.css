@@ -1,0 +1,22 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Part 4 */
+footer p{
+  background-color: grey;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  margin: 0px;
+}
+li{
+  list-style: square;
+}
+.sublist li:last-child{
+  color: red;
+}

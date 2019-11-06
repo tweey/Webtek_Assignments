@@ -1,0 +1,5 @@
+1.  The problem with binary is storing decimal numbers, therefore 0.1 + 0.2 would become 0.30000000004, and 0.30000000000004 =/= 0.3
+2. the method attribute decided how the form is sent, via GET or POST. a GET sends via a url string and POST sends via the server
+3. Because the GET attibute sends via a url string, therefore the url will change
+4. Because the frondend is avaliable for everyone who knows html, css and js to read and "change" with f.exmp. dev console, therefore you can prevent malicious input with having a backend form validator 
+5. When there is a large amount of text to send, it will be more appropiate to use textarea since the element is scaleable

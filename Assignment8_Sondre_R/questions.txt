@@ -1,0 +1,9 @@
+1. Vi kan bruke WEBGl som er en API for å få en 3-dimensjonal kontekst. Istedet for '2d' bruker vi 'experimental-webgl'
+2. Jeg ville brukt contect.arc(x,y,r,startvinkel (0), sluttvinkel (2*Math.PI)) for å skape en sirkel; Deretter ville jeg brukte fillstyle = 'blue' for å farge den 
+Eksempel;
+context.beginPath();
+context.arc(50, 50, 25, 0, 2 * Math.PI, false);
+context.fillStyle = 'blue';
+context.fill();
+3. const countriesStartingWithN = countries.filter(country => country.startsWith('N'));
+Her bruker jeg en arrow funksjon som kjører alle verdiene til coutries og sjekker om de starter med N

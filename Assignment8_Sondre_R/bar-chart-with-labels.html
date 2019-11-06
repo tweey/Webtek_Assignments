@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tax forms: Bar chart with lines</title>
+    <meta charset="UTF-8">
+    <script src="taxForms.js"></script>
+  </head>
+  <body>
+
+    <canvas id="chart" width="700" height="550"></canvas>
+
+    <script>
+      const canvas = document.getElementById('chart');
+      const context = canvas.getContext('2d');
+
+      /* Draw a line from (fromX, fromY) to (toX, toY) */
+      function drawLine(fromX, fromY, toX, toY) {
+        context.beginPath();
+        context.moveTo(toX, toY);
+        context.lineTo(fromX, fromY);
+        context.stroke();
+      }
+
+      /* Draw a text (string) on (x, y) */
+      function drawText(text, x, y) {
+        context.fillStyle = 'black';
+        context.fillText(text, x, y);
+      }
+
+      /* Draw a text and with a line to its right */
+      function drawLineWithText(text, fromX, fromY, toX, toY) {
+        drawText(text, fromX - 50, fromY + 10);
+        drawLine(fromX, fromY, toX, toY);
+      }
+
+      /* Insert your code here. */
+      /* Iterates through the loop for each "line" */
+      for (let i = 1; i < 11; i++) {
+        /* Crates a variable for the heigth */
+        let height = 550 - (i*50)
+        /* Draws text and lines from 100 to 600 with the text from 100000 - 1000000 */
+        drawLineWithText(100000*i, 100, height, 600, height)
+        }
+
+      /* Creates a function for the rectangles */
+      function drawRectangle(color, x, y, w, h) {
+        context.fillStyle = color;
+        context.fillRect(x, y, w, h);
+      }
+
+      /* Draws the rectangles and their corresponding text */
+      drawRectangle('red', 620, 50, 40, 20);
+      drawText('Income', 665, 65);
+      drawRectangle('blue', 620, 75, 40, 20);
+      drawText('Wealth', 665, 90);
+    </script>
+  </body>
+</html>

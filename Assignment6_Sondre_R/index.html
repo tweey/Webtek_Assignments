@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tax form</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <form action="http://folk.ntnu.no/michaedm/norwegian-tax-administration/receive.php" method="post">
+            <label for="name">Real Name:</label>
+            <input type="text" name="name" id="name" required><br>
+
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female" value="female"><br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="birtday">Birthday: </label>
+            <input type="date" name="birthday" id="birtday" max="1987-12-31" required><br>
+
+            <label for="hero">Hero Name:</label>
+            <input type="text" name="hero" id="hero" required ><br>
+
+            <label for="spandex">Do you wear spandex:</label>
+            <input type="checkbox" name="spandex" id="spandex"><br>
+
+            <label for="strength">Strenth: </label>
+            <input type="number" min="1" max="10" name="strength" id="strength" required><br>
+            
+            <label for="speed">Speed: </label>
+            <input type="number" min="1" max="10" name="speed" id="speed" required><br>
+
+            <label for="intelligence">Intelligence: </label>
+            <input type="number" min="1" max="10" name="intelligence" id="intelligence" required><br>
+
+            <label for="income">Income: </label>
+            <input type="number" min="0" name="income" id="income" required><br>
+
+            <label for="wealth">Wealth: </label>
+            <input type="number" min="0" name="wealth" id="wealth" required><br>
+
+            <label for="tax">Tax:</label>
+            <input type="number" name="tax" id="tax" readonly>
+            <!-- added readonly so the value would be sent with the form, 
+            disabled values are not sent by default-->
+
+            <input type="submit" id="button" name="button" value="Submit tax form">
+        </form>
+        <script src="js/script.js"></script>
+    </body>
+</html>

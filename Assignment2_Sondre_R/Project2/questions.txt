@@ -1,0 +1,5 @@
+1. The inline overrides the "style" file because the website uses whats specified last, so the body loads after the head leads to the inline loading last.
+2. Use (#)id when you want to style one specific element and use (.)class when you are styling more than one element
+3. The rgba stands for red green blue alpha. You can express 16 million colors with it and you can also make the color go towards transparent with alpha
+4. The body loads before the body and we want our webpage to load with the css. If we had put our css in our body we might have to reload our website to see the css.
+5. article > p {} 
